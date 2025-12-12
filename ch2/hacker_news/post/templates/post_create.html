@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="padding-20">
+  <form action="{% url 'post_create' %}" method="post">
+    {% csrf_token %}
+    <b>게시글 작성</b>
+    <hr/>
+    {{ form }}
+    <hr/>
+    <input type="submit" value="작성">
+  </form>
+</div>
+{% endblock %}
