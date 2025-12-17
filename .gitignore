@@ -8,3 +8,5 @@ __pycache__/
 .django/
 .hello_world/
 .hacker_news/
+.auth_user/
+.short_url/
